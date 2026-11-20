@@ -9,6 +9,7 @@
     <AssemblyName>sccap</AssemblyName>
     <RootNamespace>Sccap</RootNamespace>
     <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationIcon>sccap.ico</ApplicationIcon>
     <!-- 発行設定: .NET 8 デスクトップランタイム依存の単一 exe -->
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <SelfContained>false</SelfContained>

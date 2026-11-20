@@ -69,3 +69,7 @@ dotnet publish sccap.csproj -c Release -o dist
 ## ライセンス
 
 MIT
+
+## 補足
+
+プログラムのアイコンはGeminiが「スクリーンキャプチャアプリ」をキーワードにして生成したPNGファイルをICO形式に変換したものを利用しています。
