@@ -1,0 +1,28 @@
+{
+    // 保存先フォルダ
+    //   - 環境変数 (%USERPROFILE% など) が使えます
+    //   - {MyPictures} {Desktop} {MyDocuments} など Windows の特殊フォルダ名を { } で囲んで使えます
+    //   - 相対パスは sccap.exe のあるフォルダが基準になります
+    "saveDirectory": "{MyPictures}\sccap",
+
+    // ファイル名 (拡張子 .png は自動付与)。{ } の中は日時の書式 (yyyy MM dd HH mm ss fff)
+    // 同名ファイルがある場合は末尾に _1, _2 ... が付きます
+    "fileNameFormat": "sccap_{yyyyMMdd_HHmmss}",
+
+    // 引数なしで起動したときのモード: "region" (矩形範囲) / "window" (ウインドウ)
+    "defaultMode": "region",
+
+    // ウインドウキャプチャーの方式
+    //   "screen"      : 画面に見えている通りに切り出す (他のウインドウが重なっていればそれも写る)
+    //   "printWindow" : ウインドウ自身に描画させる (背後に隠れた部分も取得。一部アプリは黒くなる場合あり)
+    "windowCaptureMethod": "screen",
+
+    // 保存した画像をクリップボードにもコピーする
+    "copyToClipboard": false,
+
+    // 保存後に既定のアプリで画像を開く
+    "openAfterSave": false,
+
+    // 保存後に画面右下へ通知を表示する (クリックでエクスプローラーで表示)
+    "showNotification": true
+}

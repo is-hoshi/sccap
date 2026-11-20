@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>sccap</AssemblyName>
+    <RootNamespace>Sccap</RootNamespace>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <!-- 発行設定: .NET 8 デスクトップランタイム依存の単一 exe -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <DebugType>embedded</DebugType>
+    <Version>1.0.0</Version>
+    <Product>sccap</Product>
+    <Description>Simple screen capture tool</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 設定ファイル: exe と同じ場所へコピー。無い場合は埋め込みの既定値から再生成 -->
+    <None Update="sccap.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <EmbeddedResource Include="sccap.json" LogicalName="sccap.default.json" />
+  </ItemGroup>
+
+</Project>
