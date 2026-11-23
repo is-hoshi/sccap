@@ -5,7 +5,7 @@ Windows 11 用のシンプルなスクリーンキャプチャーツールです
 ## 動作環境
 
 - Windows 10 / 11 (x64)
-- [.NET 8 デスクトップランタイム](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [.NET 11 デスクトップランタイム](https://dotnet.microsoft.com/download/dotnet/11.0)
 
 ## 使い方
 
@@ -54,7 +54,7 @@ Windows 11 用のシンプルなスクリーンキャプチャーツールです
 
 ## ビルド
 
-.NET 8 以降の SDK が必要です。
+.NET 11 SDK が必要です。
 
 ```powershell
 dotnet publish sccap.csproj -c Release -o dist
